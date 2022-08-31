@@ -2,6 +2,7 @@ package chipyard
 
 import freechips.rocketchip.config.{Config}
 import freechips.rocketchip.diplomacy.{AsynchronousCrossing}
+package chipyard.fpga.arty.{WithArtyTweaks}
 
 
 
