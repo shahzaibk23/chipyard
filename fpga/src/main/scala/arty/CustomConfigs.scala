@@ -24,3 +24,8 @@ class SingleRocketConfigFPGA extends Config(
   new WithArtyTweaks ++
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++    // single-core (1 RocketTiles)
   new chipyard.config.AbstractConfig)
+
+class SingleMediumRocketConfigFPGA extends Config(
+  new WithArtyTweaks ++
+  new freechips.rocketchip.subsystem.WithNMedCores(1) ++    // single-core (1 RocketTiles [Medium])
+  new chipyard.config.AbstractConfig)
