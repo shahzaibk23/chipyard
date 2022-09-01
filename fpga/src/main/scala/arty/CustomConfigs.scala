@@ -19,3 +19,8 @@ class DualRocketConfigFPGA extends Config(
   new WithArtyTweaks ++
   new freechips.rocketchip.subsystem.WithNBigCores(2) ++    // dual-core (2 RocketTiles)
   new chipyard.config.AbstractConfig)
+
+class SingleRocketConfigFPGA extends Config(
+  new WithArtyTweaks ++
+  new freechips.rocketchip.subsystem.WithNBigCores(1) ++    // single-core (1 RocketTiles)
+  new chipyard.config.AbstractConfig)
